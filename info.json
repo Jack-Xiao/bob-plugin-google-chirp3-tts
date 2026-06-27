@@ -1,6 +1,6 @@
 {
   "identifier": "bob-plugin-google-chirp3-tts",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "category": "tts",
   "name": "Google Chirp 3 HD TTS",
   "summary": "使用 Google Cloud Text-to-Speech 的 Chirp 3 HD 语音模型进行合成（API Key 鉴权，支持英文与中文）。",

@@ -2,6 +2,14 @@
   "identifier": "bob-plugin-google-chirp3-tts",
   "versions": [
     {
+      "version": "1.2.1",
+      "desc": "修正插件主页链接：现指向本项目 GitHub 主页（此前误指向 Google 文档页）。",
+      "sha256": "409857f9e5d42a8e167832b358d7aba9e092906976a58384826d3c5d97d3c17d",
+      "url": "https://github.com/Jack-Xiao/bob-plugin-google-chirp3-tts/releases/download/v1.2.1/google-chirp3-tts-1.2.1.bobplugin",
+      "minBobVersion": "1.8.0",
+      "timestamp": 1782575009082
+    },
+    {
       "version": "1.2.0",
       "desc": "首个发布版本：支持 Google Chirp 3 HD 全部 30 个音色，中英双语（en-US / cmn-CN），API Key 鉴权，单次字符上限防超支，@音色名 前缀快速试听。",
       "sha256": "38b2ca7c24599ebdeeb43ff4cd90aea146bdd1904ee77b7a92e475d7eb10c5af",
