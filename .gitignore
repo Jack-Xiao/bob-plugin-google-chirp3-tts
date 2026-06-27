@@ -1,0 +1,10 @@
+# 构建产物（通过 GitHub Release 分发，不入库）
+*.bobplugin
+
+# 试听台脚本生成的文件
+voice-preview.html
+samples/
+
+# 系统/编辑器
+.DS_Store
+node_modules/

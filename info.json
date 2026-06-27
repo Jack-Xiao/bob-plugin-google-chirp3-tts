@@ -1,0 +1,80 @@
+{
+  "identifier": "bob-plugin-google-chirp3-tts",
+  "version": "1.2.0",
+  "category": "tts",
+  "name": "Google Chirp 3 HD TTS",
+  "summary": "使用 Google Cloud Text-to-Speech 的 Chirp 3 HD 语音模型进行合成（API Key 鉴权，支持英文与中文）。",
+  "icon": "",
+  "author": "Jack",
+  "homepage": "https://github.com/Jack-Xiao/bob-plugin-google-chirp3-tts",
+  "appcast": "https://github.com/Jack-Xiao/bob-plugin-google-chirp3-tts/raw/main/appcast.json",
+  "minBobVersion": "1.8.0",
+  "options": [
+    {
+      "identifier": "apiKey",
+      "type": "text",
+      "title": "Google API Key",
+      "defaultValue": "",
+      "desc": "Google Cloud 项目的 API Key。需在该项目启用 Cloud Text-to-Speech API，并建议把 Key 限制到此 API。",
+      "textConfig": {
+        "type": "secure",
+        "placeholderText": "AIza..."
+      }
+    },
+    {
+      "identifier": "voice",
+      "type": "menu",
+      "title": "Voice 音色",
+      "description": "跨语言通用人格：读英文走 en-US，读中文自动走 cmn-CN。试听对比：在 Bob 主窗口文本开头写「@音色名」可本次临时切换，如 @Kore Hello world，再点 🔊。",
+      "defaultValue": "Aoede",
+      "menuValues": [
+        { "title": "Aoede (女声 · 自然轻快 · 推荐)", "value": "Aoede" },
+        { "title": "Kore (女声 · 清晰沉稳 · 推荐)", "value": "Kore" },
+        { "title": "Sulafat (女声 · 温暖)", "value": "Sulafat" },
+        { "title": "Leda (女声 · 年轻)", "value": "Leda" },
+        { "title": "Zephyr (女声 · 明亮)", "value": "Zephyr" },
+        { "title": "Vindemiatrix (女声 · 柔和)", "value": "Vindemiatrix" },
+        { "title": "Achernar (女声 · 轻柔)", "value": "Achernar" },
+        { "title": "Autonoe (女声 · 明亮)", "value": "Autonoe" },
+        { "title": "Callirrhoe (女声 · 随和)", "value": "Callirrhoe" },
+        { "title": "Despina (女声 · 顺滑)", "value": "Despina" },
+        { "title": "Erinome (女声 · 清晰)", "value": "Erinome" },
+        { "title": "Gacrux (女声 · 成熟)", "value": "Gacrux" },
+        { "title": "Laomedeia (女声 · 活泼)", "value": "Laomedeia" },
+        { "title": "Pulcherrima (女声 · 积极)", "value": "Pulcherrima" },
+        { "title": "Charon (男声 · 知性)", "value": "Charon" },
+        { "title": "Puck (男声 · 活力)", "value": "Puck" },
+        { "title": "Fenrir (男声 · 有力)", "value": "Fenrir" },
+        { "title": "Orus (男声 · 沉稳)", "value": "Orus" },
+        { "title": "Achird (男声 · 友好)", "value": "Achird" },
+        { "title": "Algenib (男声 · 低沉)", "value": "Algenib" },
+        { "title": "Algieba (男声 · 顺滑)", "value": "Algieba" },
+        { "title": "Alnilam (男声 · 坚定)", "value": "Alnilam" },
+        { "title": "Enceladus (男声 · 气声)", "value": "Enceladus" },
+        { "title": "Iapetus (男声 · 清晰)", "value": "Iapetus" },
+        { "title": "Rasalgethi (男声 · 知性)", "value": "Rasalgethi" },
+        { "title": "Sadachbia (男声 · 活跃)", "value": "Sadachbia" },
+        { "title": "Sadaltager (男声 · 博学)", "value": "Sadaltager" },
+        { "title": "Schedar (男声 · 平稳)", "value": "Schedar" },
+        { "title": "Umbriel (男声 · 随和)", "value": "Umbriel" },
+        { "title": "Zubenelgenubi (男声 · 随意)", "value": "Zubenelgenubi" }
+      ]
+    },
+    {
+      "identifier": "speakingRate",
+      "type": "menu",
+      "title": "Speaking Rate 语速",
+      "description": "语速，范围 0.25–2.0。低于 1.0 变慢，适合听力精听。",
+      "defaultValue": "1.0",
+      "menuValues": [
+        { "title": "0.75x", "value": "0.75" },
+        { "title": "0.9x", "value": "0.9" },
+        { "title": "0.95x", "value": "0.95" },
+        { "title": "1.0x (default)", "value": "1.0" },
+        { "title": "1.25x", "value": "1.25" },
+        { "title": "1.5x", "value": "1.5" },
+        { "title": "2.0x", "value": "2.0" }
+      ]
+    }
+  ]
+}
